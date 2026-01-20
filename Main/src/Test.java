@@ -1,23 +1,18 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
-
 public class Test {
-    public static void main(String[] args){
-        ArrayList <Integer> list =new ArrayList<>();
-        list.add(1);
-        list.add(2);
-        list.add(1);
-        list.add(3);
-        list.add(4);
-        System.out.println(list);
+    private String name;
+    private int age;
 
-        ArrayList<Integer> unique = new ArrayList<>();
-        for (int value : list) {
-            if (!unique.contains(value)) {
-                unique.add(value);
-            }
-        }
-        System.out.println(unique);
+    public Test() {}
+
+    public Test(String name, int age) {
+        this.name = name;
+        this.age = age;
     }
+
+    public String getName() { return name; }
+    public void setName(String name) { this.name = name; }
+
+    public int getAge() { return age; }
+    public void setAge(int age) { this.age = age; }
+
 }
